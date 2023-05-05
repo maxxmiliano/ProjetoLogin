@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2? family=Montserrat:ital,wght@0,400;1,900&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/form.css">
+    <link rel="stylesheet" href="./src/css/redefinir.css">
     <title>Document</title>
 </head>
 <body>
@@ -38,10 +39,10 @@
                     </div>
                              
                     <div class="options-login">
-                          <label for="">
-                            <input type="checkbox" checked>lembrar senha 
-                          </label>
-                      <a href="">esqueceu a senha?</a>
+                      <label for="">
+                        <input type="checkbox" checked>lembrar senha 
+                        <a href="#" id="forgot-password">esqueceu a senha?</a>
+                      </label>
                     </div>
                     
                       <button type="submit">login</button>
@@ -73,8 +74,25 @@
           </form>
         </div>
 
+        <div id="container1" style="display:none;">
+          <h1>Redefinição de senha</h1>
+          <button id="reset-button">Redefinir senha</button>
+          <form id="reset-form">
+            <label for="email">Endereço de email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="new-password">Nova senha:</label>
+            <input type="password" id="new-password" name="new-password" required>
+            <label for="confirm-password">Confirme a nova senha:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <button type="submit">Redefinir senha</button>
+          </form>
+          <div id="success-message"></div>
+          <div id="error-message"></div>
+        </div>
+
     </div>
     <script src="./src/js/criar.js"></script>
     <script src="./src/js/script.js"></script>
+    <script src="./src/js/redefinir.js"></script>
 </body>
 </html>
