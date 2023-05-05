@@ -141,6 +141,10 @@ img{
     font-size: 20px;
 
 }
+.options-login a{
+    margin-left:2px ;
+    color:#fe0098c8 ;
+}
 small{
     color: #fff;
     font-size: 14px;
